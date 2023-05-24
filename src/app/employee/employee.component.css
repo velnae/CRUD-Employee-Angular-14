@@ -1,0 +1,35 @@
+table
+{
+    width:100%;
+}
+th {
+  background-color: #ff4081;
+  color:white;
+}
+
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+mat-header-cell {
+  color: #ff4081;
+  width: auto;
+  font-size:small;
+}
+
+mat-cell, mat-header-cell, mat-footer-cell {
+  flex: 1;
+  display: inline-block;
+  align-items: center;
+  overflow: hidden;
+  min-height: initial;
+  height: auto;
+  width: auto;
+  padding: 10px 0 10px 0;
+}
+
+mat-header-cell
+{
+    color:rebeccapurple;
+}
