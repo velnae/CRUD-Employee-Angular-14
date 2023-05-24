@@ -3,13 +3,16 @@ import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Employee } from './employee';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
-  url = 'http://localhost:8080/persona.php';
+  
+  url = environment.urlApi;
+
   constructor(private http: HttpClient) { }
   getAllEmployee(): Observable<Employee[]> {
     return this.http.get<Employee[]>(this.url + '');
